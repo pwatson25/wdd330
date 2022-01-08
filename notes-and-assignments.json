@@ -17,6 +17,10 @@
     {
       "label": "Exercises",
       "url": "./exercises.html"
+    },
+    {
+      "label": "Weekly Report",
+      "url": "./report.html"
     }
   ],
   "week2": [
