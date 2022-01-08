@@ -15,7 +15,7 @@ fetch(requestURL)
 
 
         newUrl.setAttribute('href', link.url);
-        newUrl.setAttribute('a', link.label)
+        newUrl.setAttribute('p', link.label)
        
         li.append(newUrl);
 
