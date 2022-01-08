@@ -1,0 +1,26 @@
+{
+  "links": [
+    {
+      "name": "Joseph",
+      "lastname": "Smith",
+      "birthdate": "23 December 1805",
+      "death": "27 June 1844",
+      "length": 14,
+      "order": 1,
+      "birthplace": "Vermont",
+      "numofchildren": 11,
+      "url": "week1/index.html"
+    },
+    {
+      "name": "Brigham",
+      "lastname": "Young",
+      "birthdate": "01 June 1801",
+      "death": "29 August 1877",
+      "length": 30,
+      "order": 2,
+      "birthplace": "Vermont",
+      "numofchildren": 56,
+      "imageurl": "week2/index.html"
+    }
+  ]
+}
