@@ -12,11 +12,11 @@
   "week1": [
     {
       "label": "Notes",
-      "url": "/notes.html"
+      "url": "../notes.html"
     },
     {
       "label": "Exercises",
-      "url": "/exercises.html"
+      "url": "../exercises.html"
     }
   ],
   "week2": [
