@@ -16,9 +16,9 @@ fetch(requestURL)
 
         newUrl.setAttribute('href', link.url);
        
-        card.append(newUrl);
+        li.append(newUrl);
 
-        cards.append(li);
+        weeklyLinks.append(li);
     });
   });
 
