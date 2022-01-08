@@ -12,12 +12,12 @@ fetch(requestURL)
     links.forEach(link => {
         let li = document.createElement('li');
         let newUrl = document.createElement('a');
-        let clickable = document.createElement('p');
 
         newUrl.setAttribute('href', link.url);
-        clickable.textContent= `${link.label}`;
+        newUrl.setAttribute('class', 'class');
        
-        li.append(clickable);
+        document.getElementsByClassName('class').innerHTML = link.label;
+
         li.append(newUrl);
 
         weeklyLinks.append(li);
