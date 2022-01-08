@@ -9,7 +9,7 @@ fetch(requestURL)
     const links = jsonObject['links.index'];
     const weeklyLinks = document.querySelector('.weeklyLinks');
 
-    links.forEach(link => {
+    links.forEach(index => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
       const anchorText = document.createTextNode(`${link.label}`);
