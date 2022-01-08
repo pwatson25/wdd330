@@ -1,12 +1,30 @@
 {
-  "links": [
+  "links": {
+    "index": [
     {
-      "label": "Week1 notes",
+      "label": "Week 1",
       "url": "week1/index.html"
     },
     {
-      "label": "Week2 notes",
+      "label": "Week 2",
       "url": "week2/index.html"
     }
+  ],
+  "week1": [
+    {
+      "tab1": "Notes",
+      "tab2": "Exercises",
+      "url1": "week1/notes.html",
+      "url2": "week1/exercises.html"
+    }
+  ],
+  "week2": [
+    {
+      "tab1": "Notes",
+      "tab2": "Exercises",
+      "url1": "week2/notes.html",
+      "url2": "week2/exercises.html"
+    }
   ]
+}
 }
