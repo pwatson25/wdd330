@@ -1,5 +1,4 @@
 {
-  "links": {
     "index": [
     {
       "label": "Week 1",
@@ -26,5 +25,4 @@
       "url2": "week2/exercises.html"
     }
   ]
-}
 }
