@@ -6,10 +6,10 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const links = jsonObject['links.index'];
+    const links = jsonObject['index'];
     const weeklyLinks = document.querySelector('.weeklyLinks');
 
-    links.forEach(index => {
+    index.forEach(link => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
       const anchorText = document.createTextNode(`${link.label}`);
