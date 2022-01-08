@@ -12,7 +12,7 @@ fetch(requestURL)
     links.forEach(link => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
-      const anchorText = document.createTextNode('Bonus Click');
+      const anchorText = document.createTextNode(`${link.label}`);
      
 
       anchor.setAttribute('href', link.url);
