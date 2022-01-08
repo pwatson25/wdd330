@@ -19,7 +19,7 @@ fetch(requestURL)
 
        
       anchor.appendChild(anchorText);
-      li.appendChild(li);
+      li.append(li);
       weeklyLinks.appendChild(li);
     });
   });
