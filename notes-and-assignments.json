@@ -11,18 +11,22 @@
   ],
   "week1": [
     {
-      "tab1": "Notes",
-      "tab2": "Exercises",
-      "url1": "week1/notes.html",
-      "url2": "week1/exercises.html"
+      "label": "Notes",
+      "url": "week1/notes.html"
+    },
+    {
+      "label": "Exercises",
+      "url": "week1/exercises.html"
     }
   ],
   "week2": [
     {
-      "tab1": "Notes",
-      "tab2": "Exercises",
-      "url1": "week2/notes.html",
-      "url2": "week2/exercises.html"
+      "label": "Notes",
+      "url": "week2/notes.html"
+    },
+    {
+      "label": "Exercises",
+      "url": "week2/exercises.html"
     }
   ]
 }
