@@ -14,7 +14,7 @@ fetch(requestURL)
         let newUrl = document.createElement('a');
 
 
-        new.setAttribute('href', link.url);
+        newUrl.setAttribute('href', link.url);
        
         card.append(newUrl);
 
