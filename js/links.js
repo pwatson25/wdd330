@@ -10,16 +10,14 @@ fetch(requestURL)
     const weeklyLinks = document.querySelector('.weeklyLinks');
 
     links.forEach(link => {
-       const anchor = document.createElement('a');
-       const li = document.createElement('li');
-        // let li = document.createElement('li');
-        // let newUrl = document.createElement('a');
+      const anchor = document.createElement('a');
+      const li = document.createElement('li');
 
-        anchor.setAttribute('href', link.url);
-        anchor.setAttribute('innerText', link.url);
+      anchor.setAttribute('href', link.url);
+      anchor.setAttribute('innerText', link.url);
        
-        li.append(anchor);
-        weeklyLinks.append(li);
+      li.appendChild(anchor);
+      weeklyLinks.appendChild(li);
     });
   });
 
