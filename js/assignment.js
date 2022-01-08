@@ -6,8 +6,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const links = jsonObject['index'];
-    const assignmentLinks = document.querySelector('.assignmentLinks');
+    const links = jsonObject['week1'];
+    const weeklyLinks = document.querySelector('.weeklyLinks');
 
     links.forEach(link => {
       const li = document.createElement('li');
@@ -20,7 +20,7 @@ fetch(requestURL)
        
       anchor.appendChild(anchorText);
       li.append(anchor);
-      assignmentLinks.appendChild(li);
+      weeklyLinks.appendChild(li);
     });
   });
 
