@@ -7,6 +7,10 @@
     {
       "label": "Week 2",
       "url": "week2/index.html"
+    },
+    {
+      "label": "Week 3",
+      "url": "week3/index.html"
     }
   ],
   "week1": [
@@ -29,8 +33,19 @@
       "url": "./notes.html"
     },
     {
+      "label": "Team Project",
+      "url": "./team_activity_1.html"
+    }
+  ],
+  "week3": [
+    {
+      "label": "Notes",
+      "url": "./notes.html"
+    },
+    {
       "label": "Exercises",
       "url": "./exercises.html"
     }
+
   ]
 }
