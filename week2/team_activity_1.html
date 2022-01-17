@@ -7,29 +7,43 @@
     <title>WDD 330 GitHub | Peter J Watson | BYU-Idaho</title>
     <meta name="description" content="WDD 330 excersises page for Peter Watson at Brigham Young University-Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Week 1 Exercise</h1>
-    </header>
     <main>
-        <p>Right now, I have it set up that I would need a new js file each week to select the correct weeks worth of
-            arrays and populate off of that. This seems inefficiant to me... Though not necisarrily bad since page speed
-            will be low. However, my question for the week would be how to set it up so it registers which week the
-            index is in and grabs the correct one. Should be possible. Something as easy as page title should work. So
-            each individual index (meaning week 1 index, week 2 index etc.) would grab the page title and determine
-            which part of the jsObject to use.</p>
+        <h2>Requirement 02</h2>
+        <input id="inputSumAll" type="number" placeholder="enter a number">
+        <button id="sumAll" onclick="sumAll()">Sum All</button>
+        <div id="outputSumAll"></div>
+
+
+        <br>
+        <br>
+        <br>
+        <h2>
+            Calculator
+        </h2>
+        <input id="input" type="number" placeholder="enter a number">
+        <input id="input2" type="number" placeholder="enter another number">
+        <br>
+        <button id="add" onclick="addition()">+</button>
+        <button id="sub" onclick="subtraction()">-</button>
+        <button id="multiply" onclick="multiply()">X</button>
+        <button id="divide" onclick="divide()">%</button>
+        <div id="output"></div>
     </main>
+
     <footer>
         <div>
-            &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a
+            &copy; <span id="currentYear"></span> | Peter J Watson | Maryland | <a
                 href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
         </div>
         Last Updated:
         <span id="lastUpdate"></span>
     </footer>
 
+    <script src="js/calc.js"></script>
     <script src="./js/date.js"></script>
 </body>
 

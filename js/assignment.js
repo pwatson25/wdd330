@@ -6,7 +6,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const links = jsonObject['week1'];
+    title = document.title;
+    const links = jsonObject[title];
     const assignmentLinks = document.querySelector('.assignmentLinks');
 
     links.forEach(link => {
