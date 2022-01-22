@@ -44,8 +44,15 @@
     },
     {
       "label": "Exercises",
-      "url": "./exercises.html"
+      "url": "./heroes.html"
+    },
+    {
+      "label": "Team Activity Part 1",
+      "url": "./teamP1.html"
+    },
+    {
+      "label": "Team Activity Part 2",
+      "url": "./teamP2.html"
     }
-
   ]
 }
