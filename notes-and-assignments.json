@@ -54,5 +54,19 @@
       "label": "Team Activity Part 2",
       "url": "./teamP2.html"
     }
+  ],
+  "week4": [
+    {
+      "label": "Notes",
+      "url": "./notes.html"
+    },
+    {
+      "label": "Exercises",
+      "url": "./search.html"
+    },
+    {
+      "label": "Team Project",
+      "url": "./team_activity_1.html"
+    }
   ]
 }
