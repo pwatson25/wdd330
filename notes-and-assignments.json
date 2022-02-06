@@ -68,5 +68,15 @@
       "label": "Team Project",
       "url": "./team_activity.html"
     }
+  ],
+  "week5": [
+    {
+      "label": "Notes",
+      "url": "./notes.html"
+    },
+    {
+      "label": "Team Project",
+      "url": "../team-activity/index.html"
+    }
   ]
 }
