@@ -84,7 +84,7 @@
     },
     {
       "label": "Team Project",
-      "url": "../team-activity/index.html"
+      "url": "./team-activity/index.html"
     }
   ]
 }
