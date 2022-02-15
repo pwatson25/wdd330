@@ -86,5 +86,11 @@
       "label": "Team Project",
       "url": "./team-activity/index.html"
     }
+  ],
+  "week6": [
+    {
+      "label": "To Do",
+      "url": "./todo/index.html"
+    }
   ]
 }
