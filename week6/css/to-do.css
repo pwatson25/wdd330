@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 250px;
+  font-family: "Open sans", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.newInput {
+  background-color: green;
+  padding: 20px 20px 10px;
+}
+
+form {
+  display: flex;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  height: 50px;
+  flex: 5;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+}
+
+form button {
+  background: #d9d9d9;
+  margin-left: 30px;
+  flex: 1;
+}
+
+form button:hover {
+  background-color: #bbb;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+}
+
+ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #c9c9c9;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f0f0f0;
+}
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li button {
+  background: #f44336;
+  padding: 0 16px;
+  border-radius: 7px;
+}
+
+ul li button:hover {
+  background: #b00c00;
+}
+
+.unchecked {
+  background: #ffeb00;
+}
+
+.checked {
+  background: #ff00e2;
+}
