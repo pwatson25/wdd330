@@ -1,27 +1,24 @@
-const requestURL = 'https://pwatson25.github.io/wdd330/notes-and-assignments.json';
+const requestWeeklyLinksURL = 'https://pwatson25.github.io/wdd330/links.json';
 
 fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const links = jsonObject['index'];
-    const weeklyLinks = document.querySelector('.weeklyLinks');
+.then(function (response) {
+  return response.json();
+})
+.then(function (jsonObject) {
+  const links = jsonObject['index'];
+  const weeklyLinks = document.querySelector('.weeklyLinks');
+  console.log(weeklyLinks);
 
-    links.forEach(link => {
-      const li = document.createElement('li');
-      const anchor = document.createElement('a');
-      const anchorText = document.createTextNode(`${link.label}`);
+  links.forEach(link => {
+    const anchor = document.createElement('a');
+    const anchorText = document.createTextNode(`${link.label}`);
+   
+
+    anchor.setAttribute('href', `../${link.url}`);
+
      
-
-      anchor.setAttribute('href', link.url);
-
-       
-      anchor.appendChild(anchorText);
-      li.append(anchor);
-      weeklyLinks.appendChild(li);
-    });
+    anchor.appendChild(anchorText);
+    li.append(anchor);
+    weeklyLinks.appendChild(li);
   });
-
-  
+});

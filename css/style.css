@@ -8,6 +8,27 @@ body {
   line-height: 1em;
   width: 750px;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar ul {
+  width: auto;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
 
 main a {
   color: #af8356;
@@ -19,13 +40,14 @@ main a:hover {
 }
 
 header {
-  padding: 1rem;
+  padding: 1rem 0 0;
   background-color: #232b2b;
 }
 
 main {
   display: block;
   padding: 1rem;
+  min-height: 275px;
   background-color: whitesmoke;
 }
 
@@ -33,6 +55,7 @@ ul {
   width: 500px;
   color: #8b4513;
   font-family: "Roboto", sans-serif;
+  display: block;
 }
 
 h1 {
@@ -64,13 +87,13 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-  margin-right: 170px;
 }
 
 #peter {
-  width: 150px;
+  width: 200px;
   height: auto;
   float: right;
+  margin-top: 0.5em;
 }
 footer {
   font-size: 1em;

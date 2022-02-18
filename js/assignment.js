@@ -1,14 +1,14 @@
-const requestURL = 'https://pwatson25.github.io/wdd330/notes-and-assignments.json';
+const requestURL = 'https://pwatson25.github.io/wdd330/assignments.json';
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
     title = document.title;
     const links = jsonObject[title];
     const assignmentLinks = document.querySelector('.assignmentLinks');
+    console.log(assignmentLinks);
 
     links.forEach(link => {
       const li = document.createElement('li');
@@ -24,5 +24,8 @@ fetch(requestURL)
       assignmentLinks.appendChild(li);
     });
   });
+
+
+
 
   
