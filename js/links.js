@@ -12,10 +12,10 @@ fetch(requestWeeklyLinksURL)
     week.forEach(week => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
-      const anchorText = document.createTextNode(`${link.label}`);
+      const anchorText = document.createTextNode(`${week.label}`);
 
 
-      anchor.setAttribute('href', link.url);
+      anchor.setAttribute('href', week.url);
 
 
       anchor.appendChild(anchorText);
