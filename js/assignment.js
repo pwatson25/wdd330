@@ -8,7 +8,6 @@ fetch(requestURL)
     title = document.title;
     const links = jsonObject[title];
     const assignmentLinks = document.querySelector('.assignmentLinks');
-    console.log(assignmentLinks);
 
     links.forEach(link => {
       const li = document.createElement('li');
