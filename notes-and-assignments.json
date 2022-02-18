@@ -23,6 +23,10 @@
     {
       "label": "Week 6",
       "url": "week6/index.html"
+    },
+    {
+      "label": "Week 7",
+      "url": "week7/index.html"
     }
   ],
   "week1": [
@@ -95,6 +99,16 @@
     {
       "label": "To Do",
       "url": "./to-do/index.html"
+    }
+  ],
+  "week7": [
+    {
+      "label": "Notes",
+      "url": "./notes.html"
+    },
+    {
+      "label": "Team Project",
+      "url": "./team-activity/index.html"
     }
   ]
 }

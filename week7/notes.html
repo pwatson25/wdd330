@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 330 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="WDD 330 notes page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<body>
+    <header>
+        <h1>Week 7 Notes</h1>
+    </header>
+    <main>
+        <h2>
+            Chapter 11: Further Functions
+        </h2>
+        <h4>
+            Call and Apply Methods
+        </h4>
+        <p>The <span>call()</span> method can be used to set the value of <span>this</span> inside a function to an
+            object that is provided as the first argument.</p>
+        <p>If the function that's called requires any parameters, these need to be provided as arguments after the first
+            argument, which is always the valie of <span>this</span></span></p>
+        <p>If a function doesn't refer to an object as <span>this</span> in it's body, it can still be called using the
+            <span>call()</span> method, but you need provide <span>null</span> as it's first argument.
+        </p>
+        <p>The <span>apply()</span> method works in the same way, except the arguments of the function are provided as
+            an array, even if there is only on argument</p>
+        <h4>
+            Temporary Variables
+        </h4>
+        <p>There is no way to remove a variable from a scope once it's been declared. Placeing any code that uses the
+            temporary variable inside an IIFE will ensure it's only available while the IIFE is invoked, this it will
+            disappear.</p>
+        <h4>
+            Safe Use of Strict Mode
+        </h4>
+        <p>
+            The recommended way to use strict mode is to place all your code inside an IIFE
+        </p>
+        <h4>
+            Event-driven Asynchronous Programming
+        </h4>
+        <p>
+            Callbacks can be used to facilitate event-driven asynchronous programming. By using callbacks, we ensure
+            that waiting for these tasks to complete doesn't hold up the execution of other parts of the program. Once
+            the task has been completed, the callback will be invoked before returning to the rest of the program.
+        </p>
+        <h4>Promises</h4>
+        <p>A promise represents the future result of an asynchronous operation. Promises don't do anything that can't
+            already be achieved using callbacks.</p>
+        <h4>Closures/Function Scope</h4>
+        <p>A closure is a reference to a variable that was created inside the scope of another function, but is then
+            kept alive and used in another part of the program.</p>
+        <p>A closure is formed when the inner function is returned by the outer function, maintaining access to any
+            variables declared inside the enclosing function.</p>
+        <p>A closure doesn't just have access to the value of a variable, it can also change the value of the variable
+            long after the function in which it was originally declared has been invoked.</p>
+        <h4>
+            Generators
+        </h4>
+        <p>These are special functions used to produce iterators that maintain the state of a value.</p>
+        <p>To define a generator function, an asterisk (<span>*</span>) is placed after the function declaration.</p>
+        <h2>Chapter 13: Ajax</h2>
+        <h4>Ajax</h4>
+        <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically
+            updates web pages without reloading.</p>
+        <h4>
+            Fetch API
+        </h4>
+        <p>What are the limitation of <span>fetch()</span>? I've used this before for many different API's. But am
+            wondering if I can "scrap" information from anywhere with it.</p>
+        <h4>File Responses</h4>
+        <p>The <span>blob()</span> method is used to read a file of raw data, such as an image or a spreadsheet.</p>
+        <h4>JSON Responses</h4>
+        <p>JSON is probably the most common format for AJAX reponses. The <span>json()</span> method is used to deal
+            with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.</p>
+        <h4>Headers Interface</h4>
+        <p>HTTP headers are used to pass on any additional information about a request or response.</p>
+        <p>
+            The Fetch API introduced a <span>Headers</span> interface, which can be used to create a Headers object,
+            which can then be added as a property of Request and Response objects.
+        </p>
+        <h4>Sending Information</h4>
+        <p>What are the limitations here??? This is incredible. And would be much simplier for me to understand for the
+            ToDo list. JSON array's are awesome. But would it get overcomplicated when you mark things as done?</p>
+        <h4><span>FormData</span></h4>
+        <p>The Fetch API includes the <span>FormData</span> interface, which makes it muc heasier to submit information
+            in forms using Ajax.</p>
+        <p>The <span>FormData</span> interface really comes into its own when a form contains files to upload.</p>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="currentYear"></span> | Peter J Watson | Maryland | <a
+                href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </div>
+        Last Updated:
+        <span id="lastUpdate"></span>
+    </footer>
+
+    <script src="./js/date.js"></script>
+</body>
+
+</html>
