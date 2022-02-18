@@ -1,6 +1,6 @@
-const requestWeeklyLinksURL = 'https://pwatson25.github.io/wdd330/links.json';
+const requestURLLink = 'https://pwatson25.github.io/wdd330/links.json';
 
-fetch(requestWeeklyLinksUrl)
+fetch(requestURLLink)
 .then(function (response) {
   return response.json();
 })
