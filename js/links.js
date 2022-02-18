@@ -9,7 +9,7 @@ fetch(requestWeeklyLinksURL)
   const weeklyLinks = document.querySelector('.weeklyLinks');
   console.log(week);
 
-    index.forEach(week => {
+    week.forEach(week => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
       const anchorText = document.createTextNode(`${link.label}`);
