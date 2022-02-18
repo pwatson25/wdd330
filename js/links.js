@@ -5,11 +5,11 @@ fetch(requestURL)
   return response.json();
 })
 .then(function (jsonObject) {
-  const links = jsonObject['index'];
+  const week = jsonObject['week'];
   const weeklyLinks = document.querySelector('.weeklyLinks');
-  console.log(links);
+  console.log(week);
 
-    links.forEach(link => {
+    index.forEach(week => {
       const li = document.createElement('li');
       const anchor = document.createElement('a');
       const anchorText = document.createTextNode(`${link.label}`);
