@@ -7,18 +7,24 @@ fetch(requestURL)
 .then(function (jsonObject) {
   const links = jsonObject['index'];
   const weeklyLinks = document.querySelector('.weeklyLinks');
-  console.log(weeklyLinks);
+  console.log(links);
 
-  links.forEach(link => {
-    const anchor = document.createElement('a');
-    const anchorText = document.createTextNode(`${link.label}`);
-   
+    links.forEach(link => {
+      const li = document.createElement('li');
+      const anchor = document.createElement('a');
+      const anchorText = document.createTextNode(`${link.label}`);
 
-    anchor.setAttribute('href', `../${link.url}`);
 
-     
-    anchor.appendChild(anchorText);
-    li.append(anchor);
-    weeklyLinks.appendChild(li);
+      anchor.setAttribute('href', link.url);
+
+
+      anchor.appendChild(anchorText);
+      li.append(anchor);
+      weeklyLinks.appendChild(li);
+    });
   });
-});
+
+
+
+
+
