@@ -1,4 +1,4 @@
-import CommentModel from './comments'
+import CommentModel from './comments.js'
 
 //create an array of hikes
 const hikeList = [
