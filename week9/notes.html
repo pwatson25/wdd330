@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 330 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="WDD 330 notes page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<body>
+    <header>
+        <h1>Week 9 Notes</h1>
+    </header>
+    <main>
+        <h2>Ch 9: The Window Object</h2>
+        <h4>
+            The Browser Object Model
+        </h4>
+        <p>The Browser Object Model (or BOM for short) is a collection of properties and methods that contain
+            information about the broswer and computer screen.</p>
+        <p>If you don't know the name of the global object, you can also refer to it using the keybord <span>This</span>
+            in the global scope.</p>
+        <h4>Browser Information</h4>
+        <p>The <span>window</span> object has a number of properties and methods that provide information aboutthe
+            user's browser. </p>
+        <h4>Controlling Windows</h4>
+        <p>A new window can be opened using the <span>window.open()</span> method.</p>
+        <p>These methods are super interesting and you could use it to really bother people with pop-ups. I wonder what
+            the full extent of the window method is? Can you prevent a window from being closed? Can you make another
+            one open everytime they close it?</p>
+        <h4>The Document Object</h4>
+        <p>Each <span>window</span> object contains a <span>document</span> object. This object has properties and
+            methods that deal with the page that has been loaded into the window.</p>
+        <h4>The Path and Domain of Cookies</h4>
+        <p>By default, cookies can only be read by pages inside the same director and domain as the file was set. This
+            id for security reasons so that access to the cookie is limited.</p>
+        <h4>Secure Cookies</h4>
+        <p>Addint the string <span>; secure</span> to the end of a cookie will ensure it's only transmitted over secure
+            HTTPS network.</p>
+        <h4>Deleting Cookings</h4>
+        <p>To remove a cookie, you need to set it to expire at a time in the past.</p>
+        <h4>Timing Functions</h4>
+        <h5><span>setTimeout()</span></h5>
+        <p>Can you use <span>setTimeout()</span> and <span>window.open()</span> together?</p>
+        <h2>Ch 14: HTML5 APIs</h2>
+        <h4>HTML5 Web Storage</h4>
+        <p>The Web Storage API provides a key-value store on the clients computer that is similar to using cooking but
+            has few restrictions, more storage capactity, and is generally easier to use.</p>
+        <p>Storage Capactiy limit is much larger than the 4KB limit for cookies (There is no actual limitin the
+            specification, but most browsers have a limit set at 5GB per domain.)</p>
+        <h4>Geolocation</h4>
+        <p>The Geolocation API is used to obtain the geographical position of the device. This means it can be used to
+            find the user’s exact location, then link to nearby places or measure the speed at which the user is moving.
+        </p>
+        <p>PEERLY EDUCATIONAL!! It says "Because of privacy concerns, permission to use this has to be granted by the
+            user first. Soooo... this means you can use it against someone???</p>
+        <h4>Web Workers</h4>
+        <p>Web workers allow process to be run in the background, adding support concurrency in JavaScript.</p>
+        <h4>Service Workers</h4>
+        <p>The Service Worker API allows a worker script to run in the background with the added benefit of being able
+            to intercept network requests.</p>
+        <h4>Notifications</h4>
+        <p>The Nortification API allows you to show messages using the system's nortifications. An advantage of using
+            the system notification is that they will still be displayed even if the web page that calls them isn't the
+            current tab.</p>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="currentYear"></span> | Peter J Watson | Maryland | <a
+                href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </div>
+        Last Updated:
+        <span id="lastUpdate"></span>
+    </footer>
+
+    <script src="./js/date.js"></script>
+</body>
+
+</html>
