@@ -25,8 +25,7 @@ body {
   width: auto;
   margin: 0;
 }
-
-li {
+.navbar ul li {
   list-style: none;
 }
 
@@ -57,6 +56,10 @@ ul {
   font-family: "Roboto", sans-serif;
   display: block;
 }
+li {
+  margin-left: 1rem;
+  line-height: 2.3rem;
+}
 
 h1 {
   font-size: 2.2em;
@@ -73,12 +76,32 @@ h2 {
   color: #8b4513;
   font-family: "Oswald", sans-serif;
 }
+
 span {
   color: rgb(191, 199, 213);
   background-color: rgb(41, 45, 62);
   padding: 0.25rem;
   border-radius: 0.375rem;
 }
+
+.mozilla {
+  color: #5b5b66;
+  background-color: #e6e6e9;
+  padding: .125rem .25rem;
+}
+.redish {
+  color: #c84080;
+  text-decoration: underline;
+}
+.purple {
+  color: #a040f8;
+  text-decoration: underline;
+}
+
+.underline {
+  background-color: unset;
+}
+
 p {
   line-height: 1.5em;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 330 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="WDD 330 notes page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<body>
+    <header>
+        <h1>Week 10 Notes</h1>
+    </header>
+    <main>
+        <h2>MDN: Validating Forms</h2>
+        <h4>Differenent Types of Client-Side Validation</h4>
+        <ul>
+            <li>
+                <h5>Built-in form validation</h5>
+            </li>
+            <p>Uses HTML5 form validation features. Built0in form validation has better performance than JavaScript, but
+                it
+                is not as customizable as JavaScript validation.</p>
+            <li>
+                <h5>JavaScript</h5>
+            </li>
+            <p>Validation is coded using JavaScript. This validation is completely customizable, but you need to create
+                it
+                all (or use a library).</p>
+        </ul>
+        <h4>Validating against a regular expression</h4>
+        <p>Another useful validation feature is the <span class="mozilla">pattern</span> attribute, which expects a
+            regular expression as it's value. A regular expression (regex) is a pettern that can be used to match
+            character combinations in text strings, so regexps are ideal for form validation and seve a variety of other
+            uses in JavaScript</p>
+        <ul>
+            <li><span class="mozilla">a</span>—Matches one character that is <span class="mozilla">a</span> (not <span
+                    class="mozilla">b</span>, not <span class="mozilla">aa</span>, and so on).</li>
+            <li><span class="mozilla">abc</span>—Matches <span class="mozilla">a</span>, followed by <span
+                    class="mozilla">b</span>, followed by <span class="mozilla">c</span>.</li>
+            <li><span class="mozilla">ab?c</span>—Matches <span class="mozilla">a</span>, optionally followed by a
+                single
+                <span class="mozilla">b</span>, followed by <span class="mozilla">c</span>. (<span
+                    class="mozilla">ac</span>
+                or <span class="mozilla">abc</span>)
+            </li>
+            <li><span class="mozilla">ab*c</span>—Matches <span class="mozilla">a</span>, optionally followed by any
+                number
+                of <span class="mozilla">bs</span>, followed by <span class="mozilla">c</span>. (<span
+                    class="mozilla">ac</span> , <span class="mozilla">abc</span>, <span class="mozilla">abbbbbc</span>,
+                and
+                so on).
+            </li>
+            <li><span class="mozilla">a|b</span>—Matches one character that is <span class="mozilla">a</span> or <span
+                    class="mozilla">b</span>.</li>
+            <li><span class="mozilla">abc|xyz</span>—Matches exactly <span class="mozilla">abc</span> or exactly <span
+                    class="mozilla">xyz</span> (but not <span class="mozilla">abcxyz</span> or <span
+                    class="mozilla">a</span> or <span class="mozilla">y</span>, and so on).
+            </li>
+        </ul>
+        <p>Cool stuff!</p>
+        <h4>Validating Forms Using JavaScript</h4>
+        <p>Refer to the <span class="underline">
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" class="redish">
+                    MDNDocument</a></span> for specific variables.
+        </p>
+        <h5>Implementing a customized error message</h5>
+        <p>The way the error message is displayed depends on the browser</p>
+        <p>There is no standard way to change their look and feel with CSS</p>
+        <p>Customizing error messages is one of the most common use cases of the <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation" class="redish">
+                constrain validation API</a></span>
+        </p>
+        <h4>Validating forms without a built-in API</h4>
+        <p>In some cases, such as legacy browser support or custom ccontrols, you won't be able to or won't want to use
+            the Constraint Validation API.</p>
+        <p>QUESTION: I thought you couldn't do a custom error message without using the constraint validation API....
+        </p>
+        <h2>Using the Fetch API</h2>
+        <p>The <span class="underline"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+                    class="purple">Fetch API</a></span> provides a JavaScript interface for accessing and manipulating
+            parts of the HTTP pipeline, such as requiests and responses.
+        </p>
+        <p>The simplest use of <span class="mozilla">fetch()</span> takes on argument — the path to the resource you
+            want to fetch — and does not directly return the JSON response body but instead returns a promise that
+            resolves with a <span class="mozilla"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response"
+                    class="purple">Response</a></span> object</p>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response" class="purple">Response</a></span>
+            object, in turn does not directly contain the actual JSON response body bit is instead a representation of
+            the entire HTTP response. </p>
+        <h4>Processing a text file line by line</h4>
+        <p>The chunks that are read from a response are not broken neatly at line boundaries and are Uint8Arrays, not
+            strings. If you want to fetch a text file and process it line by line, it is up to you to handle these
+            complications.</p>
+        <h4>Headers</h4>
+        <p>The <span class="mozilla"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Headers"
+                    class="purple">Headers</a></span> interface allows you to create your own headers object via the
+            <span class="mozilla"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Headers"
+                    class="purple">Headers()</a></span> constructor.
+        </p>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="currentYear"></span> | Peter J Watson | Maryland | <a
+                href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </div>
+        Last Updated:
+        <span id="lastUpdate"></span>
+    </footer>
+
+    <script src="./js/date.js"></script>
+</body>
+
+</html>
