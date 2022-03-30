@@ -16,18 +16,55 @@
 
     <div class="container">
         <div class="data">
+            <div class="welcome">Welcome, <span id="user"></span></div>
+            <div class="logout"><button onclick="deleteItems(), window.location.reload()">Logout</button></div>
             <div class="score">Score : <span class="scoreBoard">0</span></div>
         </div>
-        <ul id="rangers"></ul>
 
-        <div class="memory-game" id="cards">
-            <div class="newGame">
-                <button class="playAgain" onClick="window.location.reload();">Play Again?</button>
-            </div>
+    </div>
+
+    <div class="form-overlay">
+        <div class="form">
+            <h2>Please Enter Your Nickname!</h2>
+            <form>
+                <input placeholder="Username" type="text" id="username">
+                <input class="formButton" type="button" value="Login" id="submit"
+                    onclick="store(), window.location.reload()"></input>
+            </form>
         </div>
     </div>
 
-    <script src="./js/animal_array.js" type="module"></script>
+    <div class="memory-game" id="cards">
+
+    </div>
+    <div class="model-overlay">
+        <div class="model">
+            <h2 class="winner">You Rock!</h2>
+            <button class="restart" onClick="window.location.reload()">Play Again?</button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src=" ./js/animal_array.js" type="module"></script>
+    <script type="text/javascript">
+        let formOver = document.getElementsByClassName('form-overlay')[0];
+        let form = document.getElementsByClassName('form')[0];
+
+        function store() {
+            var player = document.getElementById("username");
+            localStorage.setItem("username", player.value);
+        }
+        if (localStorage.getItem("username") === null) {
+            formOver.style.display = "block";
+            form.style.display = "block";
+        }
+        document.getElementById("user").innerHTML = localStorage.getItem("username");
+
+        function deleteItems() {
+            localStorage.clear();
+        }
+    </script>
 
 </body>
 

@@ -53,7 +53,9 @@ let cardsId = [];
 let cardsSelected = [];
 let cardsWon = 0;
 let clicks = 0;
-let newGame = document.getElementsByClassName('newGame')[0];
+let modelOver = document.getElementsByClassName('model-overlay')[0];
+let model = document.getElementsByClassName('model')[0];
+
 
 // *********************
 // ADDED:
@@ -72,8 +74,6 @@ for (let i = 0; i < cardArray.length / 2; i++) {
   start += 2;
   end += 2;
 }
-
-
 
 var cards = document.getElementById("cards")
 
@@ -187,9 +187,8 @@ function disableCards() {
 
   if (cardsWon == complete) {
     setTimeout(function () {
-      alert("You Won");
-
-      newGame.style.display = "flex";
+      modelOver.style.display = "block";
+      model.style.display = "block";
     }, 1000);
   }
   resetBoard();
