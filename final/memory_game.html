@@ -17,7 +17,8 @@
     <div class="container">
         <div class="data">
             <div class="welcome">Welcome, <span id="user"></span></div>
-            <div class="logout"><button onclick="deleteItems(), window.location.reload()">Logout</button></div>
+            <div class="logout"><button class="destroy"
+                    onclick="deleteItems(), window.location.reload()">Logout</button></div>
             <div class="score">Score : <span class="scoreBoard">0</span></div>
         </div>
 
@@ -50,6 +51,8 @@
     <script type="text/javascript">
         let formOver = document.getElementsByClassName('form-overlay')[0];
         let form = document.getElementsByClassName('form')[0];
+        let logout = document.getElementsByClassName('destroy')[0];
+
 
         function store() {
             var player = document.getElementById("username");
@@ -58,6 +61,7 @@
         if (localStorage.getItem("username") === null) {
             formOver.style.display = "block";
             form.style.display = "block";
+            logout.style.display = "none";
         }
         document.getElementById("user").innerHTML = localStorage.getItem("username");
 
