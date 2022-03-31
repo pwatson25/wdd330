@@ -34,7 +34,7 @@
             </form>
         </div>
     </div>
-
+    <h2 class="instructions">Match two images of the same type of animal!</h2>
     <div class="memory-game" id="cards">
 
     </div>
@@ -53,6 +53,13 @@
         let form = document.getElementsByClassName('form')[0];
         let logout = document.getElementsByClassName('destroy')[0];
 
+
+        document.querySelector('#username').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                var player = document.getElementById("username");
+                localStorage.setItem("username", player.value);
+            }
+        });
 
         function store() {
             var player = document.getElementById("username");
