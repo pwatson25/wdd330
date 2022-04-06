@@ -15,7 +15,7 @@ fetch(requestWeeklyLinksURL)
       const anchorText = document.createTextNode(`${week.label}`);
 
 
-      anchor.setAttribute('href', week.url);
+      anchor.setAttribute('href', `./${week.url}`);
 
 
       anchor.appendChild(anchorText);
