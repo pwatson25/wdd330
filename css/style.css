@@ -8,6 +8,7 @@ body {
   line-height: 1em;
   width: 750px;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #fff;
@@ -21,10 +22,12 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .navbar ul {
   width: auto;
   margin: 0;
 }
+
 .navbar ul li {
   list-style: none;
 }
@@ -39,7 +42,7 @@ main a:hover {
 }
 
 header {
-  padding: 1rem 0 0;
+  padding: 1rem 0;
   background-color: #232b2b;
 }
 
@@ -56,6 +59,7 @@ ul {
   font-family: "Roboto", sans-serif;
   display: block;
 }
+
 li {
   margin-left: 1rem;
   line-height: 2.3rem;
@@ -89,10 +93,12 @@ span {
   background-color: #e6e6e9;
   padding: .125rem .25rem;
 }
+
 .redish {
   color: #c84080;
   text-decoration: underline;
 }
+
 .purple {
   color: #a040f8;
   text-decoration: underline;
@@ -113,11 +119,12 @@ hr {
 }
 
 #peter {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 336px;
   float: right;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
+
 footer {
   font-size: 1em;
   background-color: #232b2b;
@@ -125,6 +132,7 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
 footer a {
   color: whitesmoke;
 }
