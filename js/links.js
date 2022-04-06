@@ -1,13 +1,13 @@
 const requestWeeklyLinksURL = 'https://pwatson25.github.io/wdd330/links.json';
 
 fetch(requestWeeklyLinksURL)
-.then(function (response) {
-  return response.json();
-})
-.then(function (jsonObject) {
-  const week = jsonObject['week'];
-  const weeklyLinks = document.querySelector('.weeklyLinks');
-  console.log(week);
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const week = jsonObject['week'];
+    const weeklyLinks = document.querySelector('.weeklyLinks');
+    console.log(week);
 
     week.forEach(week => {
       const li = document.createElement('li');
@@ -23,8 +23,3 @@ fetch(requestWeeklyLinksURL)
       weeklyLinks.appendChild(li);
     });
   });
-
-
-
-
-
